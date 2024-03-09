@@ -2,6 +2,8 @@
 
 Convert a `rem` value from one root font size to another.
 
+Visit the the calculator [https://jamigibbs.github.io/rem-to-rem/](https://jamigibbs.github.io/rem-to-rem/)
+
 ## Development
 
 1. run `npm install`
@@ -17,8 +19,6 @@ Reference the [USWDS Design System](https://designsystem.digital.gov/)
 This repository deploys to GitHub pages on every push to the main branch, via
 [this workflow job](.github/workflows/github-pages.yml).
 
-Visit the page that this site generates at
-[https://jamigibbs.github.io/rem-to-rem/](https://jamigibbs.github.io/rem-to-rem/)
 
 ## Acknowledgement
 

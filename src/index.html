@@ -33,20 +33,23 @@
       <section class="grid-container usa-section">
         <div class="grid-row grid-gap">
           <div class="tablet:grid-col-4">
-            <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">
-              Get started
-            </h2>
-            <p class="font-body-lg">Convert a rem value from one root font size to another.</p>
+            <!-- <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">
+              How to use
+            </h2> -->
+            <h1 class="font-body-xl text-light">Convert a rem value from one root font size to another</h1>
+            <p><strong>rem (root em)</strong> is a relative unit based on the root font-size of the document.</p>
+            <p><strong>1rem</strong> means <strong>1 times the root font-size</strong></p>
+            <p class="line-height-sans-4">This calculator will convert an existing rem value to another rem value when the base font size has changed.</p>
           </div>
           <div class="tablet:grid-col-8 usa-prose">
 
             <form action="#" onsubmit="return handleForm(this);">
               <div>
-                <label class="usa-label" for="rootFontSizeStart">Starting Root Font Size (Formation)</label>
+                <label class="usa-label" for="rootFontSizeStart">Starting Root Font Size</label>
                 <input class="usa-input" id="rootFontSizeStart" value="10" onkeypress="return handleKeypress();" />
               </div>
               <div>
-                <label class="usa-label" for="rootFontSizeFinal">Final Root Font Size (USWDS)</label>
+                <label class="usa-label" for="rootFontSizeFinal">Final Root Font Size</label>
                 <input class="usa-input" id="rootFontSizeFinal" value="16" onkeypress="return handleKeypress();"/>
               </div>
               <div>

@@ -43,15 +43,15 @@
             <form action="#" onsubmit="return handleForm(this);">
               <div>
                 <label class="usa-label" for="rootFontSizeStart">Starting Root Font Size (Formation)</label>
-                <input class="usa-input" id="rootFontSizeStart" value="10" />
+                <input class="usa-input" id="rootFontSizeStart" value="10" onkeypress="return handleKeypress();" />
               </div>
               <div>
                 <label class="usa-label" for="rootFontSizeFinal">Final Root Font Size (USWDS)</label>
-                <input class="usa-input" id="rootFontSizeFinal" value="16"/>
+                <input class="usa-input" id="rootFontSizeFinal" value="16" onkeypress="return handleKeypress();"/>
               </div>
               <div>
                 <label class="usa-label" for="initialRem">REM value to convert</label>
-                <input class="usa-input" id="initialRem" value="1.6"/>
+                <input class="usa-input" id="initialRem" value="1.6" onkeypress="return handleKeypress();" />
               </div>
 
               <div class="margin-top-4">
@@ -60,8 +60,13 @@
             </form>
 
             <div>
-              <p id="new-rem"></p>
-              <p id="copy-notice"></p>
+              <p class="font-heading-xl display-none" id="new-rem" hidden></p>
+            </div>
+
+            <div id="alert-result" class="usa-alert usa-alert--info usa-alert--no-icon display-none" hidden>
+              <div class="usa-alert__body">
+                <p class="usa-alert__text" id="alert-content"></p>
+              </div>
             </div>
 
           </div>

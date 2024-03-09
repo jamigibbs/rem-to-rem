@@ -2,10 +2,15 @@
 
 Convert a `rem` value from one root font size to another.
 
-## Acknowledgement
+## Development
 
-This project was jump-started using the [USWDS HTML Starter](https://github.com/adhocteam/uswds_html_starter) project by the [Ad Hoc team](https://github.com/adhocteam).
+1. run `npm install`
+2. run `npm run watch`and visit http://127.0.0.1:8080
 
+To edit the CSS for the site, change src/styles.scss
+To edit the HTML for the page, change src/index.html
+
+Reference the [USWDS Design System](https://designsystem.digital.gov/)
 
 ## Deployment
 
@@ -14,3 +19,8 @@ This repository deploys to GitHub pages on every push to the main branch, via
 
 Visit the page that this site generates at
 [https://jamigibbs.github.io/rem-to-rem/](https://jamigibbs.github.io/rem-to-rem/)
+
+## Acknowledgement
+
+This project was jump-started using the [USWDS HTML Starter](https://github.com/adhocteam/uswds_html_starter) project by the [Ad Hoc team](https://github.com/adhocteam).
+

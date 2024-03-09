@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>REM-to-REM</title>
+    <link href="styles.css" rel="stylesheet" />
+    <!-- This small JavaScript file (less than 1 KB minified) helps the browser
+    know if the USWDS JavaScript library is loading properly. This prevents
+    component content from “flashing” or “shifting” while the page loads.
+    Reference uswds-init.min.js in the <head> of your page -->
+    <script src="uswds/js/uswds-init.min.js"></script>
+    <!-- XXX: figure out what javascript needs to be included, and include it -->
+    <meta name="viewport" content="width=device-width" />
+  </head>
+
+  <body>
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+    <div class="usa-overlay"></div>
+    <header class="usa-header usa-header--basic">
+      <div class="usa-nav-container">
+        <div class="usa-navbar">
+          <div class="usa-logo" id="-logo">
+            <em class="usa-logo__text"
+              ><a href="/" title="<Project title>"
+                >rem-to-rem</a
+              ></em
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="main-content">
+      <section class="grid-container usa-section">
+        <div class="grid-row grid-gap">
+          <div class="tablet:grid-col-4">
+            <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">
+              Get started
+            </h2>
+            <p class="font-body-lg">Convert a rem value from one root font size to another.</p>
+          </div>
+          <div class="tablet:grid-col-8 usa-prose">
+
+            <form action="#" onsubmit="return handleForm(this);">
+              <div>
+                <label class="usa-label" for="root-font-size-start">Starting Root Font Size (Formation)</label>
+                <input class="usa-input" id="root-font-size-start" name="root-font-size-start" value="10" />
+              </div>
+              <div>
+                <label class="usa-label" for="root-font-size-final">Final Root Font Size (USWDS)</label>
+                <input class="usa-input" id="root-font-size-final" name="root-font-size-final" value="16"/>
+              </div>
+              <div
+                <label class="usa-label" for="intial-rem">REM value to convert</label>
+                <input class="usa-input" id="intial-rem" name="intial-rem" value="1.6"/>
+              </div>
+
+              <div class="margin-top-4">
+                <button type=" button" class="usa-button">Submit</button>
+              </div>
+            </form>
+
+            <div>
+              <p id="new-rem"></p>
+              <p id="copy-notice"></p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="usa-footer">
+      <div class="grid-container usa-footer__return-to-top">
+        <a href="https://github.com/jamigibbs/rem-to-rem">Github</a>
+      </div>
+    </footer>
+    <script src="uswds/js/uswds.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

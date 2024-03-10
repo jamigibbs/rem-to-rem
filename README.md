@@ -12,7 +12,7 @@ Visit the the calculator [https://jamigibbs.github.io/rem-to-rem/](https://jamig
 To edit the CSS for the site, change src/styles.scss
 To edit the HTML for the page, change src/index.html
 
-Reference the [USWDS Design System](https://designsystem.digital.gov/)
+Uses the [U.S. Web Design System (USWDS)](https://designsystem.digital.gov/)
 
 ## Deployment
 
